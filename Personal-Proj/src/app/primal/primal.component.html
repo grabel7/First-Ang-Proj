@@ -1,0 +1,24 @@
+<div class="container" [ngSwitch]="nomeFilme">   
+<input placeholder="Digite o nome do Filme..." type:text [(ngModel)]="nomeFilme" (input)="exibirFoto()" >
+<span *ngSwitchCase="'Aranhaverso'"><b>
+    Homem-Aranha: Através do Aranhaverso<br>
+    </b></span>  
+<img *ngIf="fotoFilme" [src]="fotoFilme" alt="Foto do Filme" width="400" 
+height="500">
+<div class="container" [ngSwitch]="nomeFilme">
+    <p *ngSwitchCase="'Aranhaverso'">
+Depois de se reunir com Gwen Stacy, Homem-Aranha é jogado no multiverso, onde ele encontra uma equipe encarregada de proteger sua própria existência.<br>
+<b>Data de lançamento:</b> 1 de junho de 2023 (Brasil)<br>
+<b>Diretores:</b> Joaquim Dos Santos, Kemp Powers, Justin K. Thompson<br>
+<b>Produtoras:</b> Sony Pictures Animation, Marvel Entertainment, Columbia Pictures, Pascal Pictures, Arad Productions, Lord Miller<br>
+<b>Autor:</b> Brian Michael Bendis<br>
+<b>Produção:</b> Chris Miller, Phil Lord, Amy Pascal, Avi Arad, Christina Steinberg<br>
+<b>Baseado em:</b> Miles Morales; de: Brian Michael Bendis; e Sara Pichelli
+    </p>
+
+    
+    <p *ngSwitchCase="'Nay'">
+        Nay
+    </p>
+</div>
+</div> 

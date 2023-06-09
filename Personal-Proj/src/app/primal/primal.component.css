@@ -1,0 +1,13 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+  }
+  
+  input, span {
+    margin-bottom: 10px; /* Espaçamento entre os elementos */
+    /* Outros estilos para os elementos */
+  }
